@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquire · Madhav Vidya Bhavan</title>
+  <meta name="description" content="Prepare an enquiry to Madhav Vidya Bhavan about one of its books. This page does not send email by itself.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">म</span>
+      <span>
+        <span class="brand-hi" lang="hi">माधव विद्या भवन</span>
+        <span class="brand-en">Madhav Vidya Bhavan</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="authors.html">Authors</a>
+      <a href="about.html">The house</a>
+      <a href="enquire.html" aria-current="page">Enquire</a>
+    </nav>
+  </div>
+</header>
+
+<main id="content">
+  <div class="wrap">
+    <p class="kicker">Copies and questions</p>
+    <h1>Enquire</h1>
+    <p class="lede">Tell us which book you want. This page keeps the note on your screen so you can copy it. It does not send email.</p>
+    <form id="enquire-form" class="form" novalidate>
+      <label>Your name
+        <input name="name" id="name" autocomplete="name" required>
+      </label>
+      <label>Email
+        <input name="email" id="email" type="email" autocomplete="email" required>
+      </label>
+      <label>Book
+        <select name="book" id="book" required>
+          <option value="">Choose a title</option><option value="why-hinduism-english">Why? Hinduism Defined Scientifically and Rationally</option><option value="why-purvardha">क्यों? (पूर्वार्ध) — Why? (Purvardha)</option><option value="why-hinduism-sanskrit-english">Why? Hinduism Defined Scientifically and Rationally</option><option value="veda-digdarshan">वेद दिग्दर्शन — A Most Comprehensive Introduction to the Vedas</option><option value="purana-digdarshan">पुराण दिग्दर्शन — The Most Comprehensive Introduction to the Puranas Ever</option><option value="veda-purana-set">वेद एवं पुराण दिग्दर्शन — Veda and Purana Digdarshan</option><option value="secrets-of-ramayanas">The Secrets of Different Ramayanas</option><option value="different-ramayanas">विविध रामायण — Different Ramayanas</option><option value="our-festivals">हमारे पर्व और त्यौहार — Our Feasts and Festivals</option><option value="who-is-hindu">Who is Hindu</option><option value="sanatan-dharma-questions">सनातन हिन्दू धर्म प्रश्नोत्तरी — Question Answers on Sanatan Dharma</option><option value="best-stories-from-vedas">वेदों की श्रेष्ठ कहानियां — Best Stories from the Vedas</option><option value="tulsidas">हिन्दू समाज के उन्नायक: तुलसी दास — Tulsidas: The Nayak of Hindu Society</option>
+        </select>
+      </label>
+      <label>Message
+        <textarea name="message" id="message" required placeholder="How many copies, and where they should go."></textarea>
+      </label>
+      <p class="error" id="form-error" hidden>Add your name, a valid email, a book, and a message.</p>
+      <button class="button" type="submit">Prepare the note</button>
+      <p class="form-note">Or write by post to 150, Old Gupta Colony, Vijay Nagar, New Delhi 110009.</p>
+    </form>
+    <div class="result" id="enquire-result" hidden>
+      <h2>Your note is ready</h2>
+      <p>Nothing was sent. Copy the note and mail it to the house, or take it to Vijay Nagar.</p>
+      <pre id="enquire-text"></pre>
+      <div class="actions">
+        <button class="button" type="button" id="copy-note">Copy note</button>
+        <button class="button secondary" type="button" id="another">Write another</button>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <p class="brand-hi" lang="hi">माधव विद्या भवन</p>
+      <p class="footer-name">Madhav Vidya Bhavan</p>
+      <p>150, Old Gupta Colony<br>Vijay Nagar, New Delhi 110009</p>
+    </div>
+    <div>
+      <p class="footer-label">On this site</p>
+      <a href="catalogue.html">Catalogue of 13 titles</a>
+      <a href="authors.html">The authors</a>
+      <a href="about.html">The house</a>
+      <a href="enquire.html">Enquire about a book</a>
+    </div>
+    <div>
+      <p class="footer-label">A note on the list</p>
+      <p>Titles, authors, languages, and physical details follow the editions currently listed for this imprint. Bookseller pages sometimes spell the name Madhav Vidya Bhawan.</p>
+    </div>
+  </div>
+  <p class="footer-end">Madhav Vidya Bhavan · Delhi</p>
+</footer>
+<script src="js/nav.js"></script>
+<script src="js/enquire.js"></script>
+</body>
+</html>
