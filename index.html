@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#content">Skip to content</a>
 <header class="site-header">
   <div class="header-inner">
@@ -34,25 +34,28 @@
 </header>
 
 <main id="content">
+  <section class="shelf-scene" aria-labelledby="shelf-heading">
+    <div class="shelf-copy">
+      <p class="kicker">Delhi · publishing house</p>
+      <h1 id="shelf-heading" lang="hi">माधव विद्या भवन</h1>
+      <p class="lede">Thirteen books on the Vedas, the Puranas, the Ramayana, and Sanatan Dharma. Draw one forward.</p>
+      <p class="shelf-now" id="shelf-now" aria-live="polite"></p>
+      <p class="shelf-meta" id="shelf-meta"></p>
+    </div>
+    <div class="shelf-stage" id="shelf-stage" tabindex="0" aria-label="Books on the shelf. Drag, or use the arrow keys.">
+      <div class="shelf-row" id="shelf-row"></div>
+      <div class="shelf-plank" aria-hidden="true"></div>
+      <p class="shelf-fallback">The shelf needs JavaScript. The list below has every title.</p>
+    </div>
+    <div class="shelf-controls">
+      <button type="button" id="shelf-prev" aria-label="Previous book">Previous</button>
+      <p class="shelf-hint" id="shelf-hint">Drag the shelf, or scroll</p>
+      <button type="button" id="shelf-next" aria-label="Next book">Next</button>
+      <a class="button" id="shelf-open" href="books/purana-digdarshan.html">Open this book</a>
+    </div>
+  </section>
   <div class="wrap">
-    <section class="hero">
-      <div>
-        <p class="kicker">Delhi · publishing house</p>
-        <h1 lang="hi">माधव विद्या भवन</h1>
-        <p class="lede">Books on the Vedas, the Puranas, the many Ramayanas, and the questions Sanatan Dharma still asks. Hindi, Sanskrit, and English, from Pt. Madhavacharya Shastri and Pt. Premacharya Shastri.</p>
-        <div class="actions">
-          <a class="button" href="catalogue.html">Browse the catalogue</a>
-          <a class="button secondary" href="about.html">About the house</a>
-        </div>
-      </div>
-      <aside class="hero-aside">
-        <p class="stat">13</p>
-        <p>titles in the current list, from a 50-page introduction to the 792-page Purana Digdarshan.</p>
-        <p><a href="enquire.html">Ask about a copy</a></p>
-      </aside>
-    </section>
-
-    <div class="section-head">
+    <div class="section-head" id="list">
       <h2>From the list</h2>
       <a href="catalogue.html">All 13 titles</a>
     </div>
@@ -123,6 +126,80 @@
     <p class="meta">Hindi · 148 pages</p>
   </div>
 </a>
+
+<a class="card" href="books/why-hinduism-sanskrit-english.html" data-lang="sanskrit-english" data-subjects="dharma" data-search="why? hinduism defined scientifically and rationally  pt. madhavacharya shastri sanskrit, transliteration, and english sanatan dharma hal933">
+  <div class="cover"><img src="images/covers/hal933.jpg" alt="Why? Hinduism Defined Scientifically and Rationally" width="400" height="560" loading="lazy"></div>
+  <div class="card-body">
+    <p class="pill">Sanatan Dharma</p>
+    <p class="en-title">Why? Hinduism Defined Scientifically and Rationally</p>
+    <p class="meta">Pt. Madhavacharya Shastri</p>
+    <p class="meta">Sanskrit, transliteration, and English · 578 pages</p>
+  </div>
+</a>
+
+<a class="card" href="books/veda-purana-set.html" data-lang="sanskrit-hindi" data-subjects="vedas puranas" data-search="veda and purana digdarshan वेद एवं पुराण दिग्दर्शन pt. madhava shastri sanskrit and hindi vedas and puranas bkna864">
+  <div class="cover"><img src="images/covers/bkna864.jpg" alt="वेद एवं पुराण दिग्दर्शन — Veda and Purana Digdarshan" width="400" height="560" loading="lazy"></div>
+  <div class="card-body">
+    <p class="pill">Vedas and Puranas</p>
+    <p class="hi" lang="hi">वेद एवं पुराण दिग्दर्शन</p>
+    <p class="en-title">Veda and Purana Digdarshan</p>
+    <p class="meta">Pt. Madhava Shastri</p>
+    <p class="meta">Sanskrit and Hindi · 1,188 pages</p>
+  </div>
+</a>
+
+<a class="card" href="books/secrets-of-ramayanas.html" data-lang="english" data-subjects="ramayana" data-search="the secrets of different ramayanas  pt. madhavacharya shastri english ramayana idj562">
+  <div class="cover"><img src="images/covers/idj562.jpg" alt="The Secrets of Different Ramayanas" width="400" height="560" loading="lazy"></div>
+  <div class="card-body">
+    <p class="pill">Ramayana</p>
+    <p class="en-title">The Secrets of Different Ramayanas</p>
+    <p class="meta">Pt. Madhavacharya Shastri</p>
+    <p class="meta">English · 154 pages</p>
+  </div>
+</a>
+
+<a class="card" href="books/who-is-hindu.html" data-lang="sanskrit-english" data-subjects="dharma" data-search="who is hindu  pt. premacharya shastri sanskrit, transliteration, and english sanatan dharma nal144">
+  <div class="cover"><img src="images/covers/nal144.jpg" alt="Who is Hindu" width="400" height="560" loading="lazy"></div>
+  <div class="card-body">
+    <p class="pill">Sanatan Dharma</p>
+    <p class="en-title">Who is Hindu</p>
+    <p class="meta">Pt. Premacharya Shastri</p>
+    <p class="meta">Sanskrit, transliteration, and English · 50 pages</p>
+  </div>
+</a>
+
+<a class="card" href="books/sanatan-dharma-questions.html" data-lang="hindi" data-subjects="dharma" data-search="question answers on sanatan dharma सनातन हिन्दू धर्म प्रश्नोत्तरी pt. premacharya shastri hindi sanatan dharma nzi203">
+  <div class="cover"><img src="images/covers/nzi203.jpg" alt="सनातन हिन्दू धर्म प्रश्नोत्तरी — Question Answers on Sanatan Dharma" width="400" height="560" loading="lazy"></div>
+  <div class="card-body">
+    <p class="pill">Sanatan Dharma</p>
+    <p class="hi" lang="hi">सनातन हिन्दू धर्म प्रश्नोत्तरी</p>
+    <p class="en-title">Question Answers on Sanatan Dharma</p>
+    <p class="meta">Pt. Premacharya Shastri</p>
+    <p class="meta">Hindi · 92 pages</p>
+  </div>
+</a>
+
+<a class="card" href="books/best-stories-from-vedas.html" data-lang="hindi" data-subjects="vedas" data-search="best stories from the vedas वेदों की श्रेष्ठ कहानियां pt. premacharya shastri hindi vedas nzi218">
+  <div class="cover"><img src="images/covers/nzi218.jpg" alt="वेदों की श्रेष्ठ कहानियां — Best Stories from the Vedas" width="400" height="560" loading="lazy"></div>
+  <div class="card-body">
+    <p class="pill">Vedas</p>
+    <p class="hi" lang="hi">वेदों की श्रेष्ठ कहानियां</p>
+    <p class="en-title">Best Stories from the Vedas</p>
+    <p class="meta">Pt. Premacharya Shastri</p>
+    <p class="meta">Hindi · 112 pages</p>
+  </div>
+</a>
+
+<a class="card" href="books/tulsidas.html" data-lang="hindi" data-subjects="society" data-search="tulsidas: the nayak of hindu society हिन्दू समाज के उन्नायक: तुलसी दास pt. premacharya shastri hindi hindu society nzi202">
+  <div class="cover"><img src="images/covers/nzi202.jpg" alt="हिन्दू समाज के उन्नायक: तुलसी दास — Tulsidas: The Nayak of Hindu Society" width="400" height="560" loading="lazy"></div>
+  <div class="card-body">
+    <p class="pill">Hindu society</p>
+    <p class="hi" lang="hi">हिन्दू समाज के उन्नायक: तुलसी दास</p>
+    <p class="en-title">Tulsidas: The Nayak of Hindu Society</p>
+    <p class="meta">Pt. Premacharya Shastri</p>
+    <p class="meta">Hindi · 191 pages</p>
+  </div>
+</a>
     </div>
 
     <div class="section-head">
@@ -161,6 +238,7 @@
   <p class="footer-end">Madhav Vidya Bhavan · Delhi</p>
 </footer>
 <script src="js/nav.js"></script>
+<script src="js/shelf.js"></script>
 
 </body>
 </html>
